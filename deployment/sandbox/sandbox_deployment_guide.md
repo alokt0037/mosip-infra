@@ -52,6 +52,8 @@ $ hdfs dfs -chown -R prereg:prereg  /user/prereg
 $ hdfs dfs -mkdir /user/idrepo
 $ hdfs dfs -chown -R idrepo:idrepo  /user/idrepo
 ```
+### ClamAV
+
 
 
 
