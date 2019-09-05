@@ -5,15 +5,17 @@ This document describes how to install MOSIP in an in-premise sandbox enviroment
 ## Hardware prerequisites
 
 Bare Metal or Virutal machines with following minimum configurations:
-1. CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
-1. CPU: 5 cores, RAM: 10GB, Storage: 512 GB 
-1. CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
+1. **VM1**: CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
+1. **VM2**: CPU: 5 cores, RAM: 10GB, Storage: 512 GB 
+1. **VM3**: CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
 
 
 ## Operating System
 CentOS 7
 
 ## Environment setup
+To be installed on VM1 (see above).
+
 ### Postgresql DB
 * Install version 10.10 as per procedure given here: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-postgresql-9-3-on-centos-7.html
 
@@ -85,6 +87,10 @@ WantedBy=multi-user.target
 
 ### ActiveMQ
 * https://www.vultr.com/docs/how-to-install-apache-activemq-on-centos-7
+
+## Building MOSIP Services (Dockers)
+
+
 
 
 
