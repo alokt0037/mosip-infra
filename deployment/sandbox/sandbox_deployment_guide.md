@@ -1,0 +1,30 @@
+# MOSIP Sandbox Deployment Guide
+
+This document describes how to install MOSIP in an in-premise sandbox enviroment on a few virtual machines, capabable of running a pilot or a trial.
+
+## Hardware prerequisites
+
+Bare Metal or Virutal machines with following minimum configurations:
+1. CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
+1. CPU: 5 cores, RAM: 10GB, Storage: 512 GB 
+1. CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
+
+
+## Operating System
+CentOS 7
+
+## Environment setup
+### Postgres DB
+* Install version 10.10 as per procedure given here: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-postgresql-9-3-on-centos-7.html
+
+* To enable DB access from external machines edit config file `/var/lib/pgsql/10/data/postgresql.conf` and modify as below:  
+`listen_addresses = '*'  
+port= 5432  
+unix_socket_directories = '/var/run/postgresql, /tmp'  
+max_connections = 1000  
+shared_buffers = 2GB`
+
+
+
+
+
