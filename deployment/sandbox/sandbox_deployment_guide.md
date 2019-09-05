@@ -18,11 +18,13 @@ CentOS 7
 * Install version 10.10 as per procedure given here: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-postgresql-9-3-on-centos-7.html
 
 * To enable DB access from external machines edit config file `/var/lib/pgsql/10/data/postgresql.conf` and modify as below:  
-`listen_addresses = '*'  
+```
+listen_addresses = '*'
 port= 5432  
 unix_socket_directories = '/var/run/postgresql, /tmp'  
 max_connections = 1000  
-shared_buffers = 2GB`
+shared_buffers = 2GB
+```
 
 
 
