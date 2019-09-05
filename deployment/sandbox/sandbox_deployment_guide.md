@@ -5,10 +5,9 @@ This document describes how to install MOSIP in an in-premise sandbox enviroment
 ## Hardware prerequisites
 
 Bare Metal or Virutal machines with following minimum configurations:
-1. **VM1**: CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
-1. **VM2**: CPU: 5 cores, RAM: 10GB, Storage: 512 GB 
-1. **VM3**: CPU: 8 cores, RAM: 12GB, Storage: 512 GB 
-
+**VM1**: CPU: 8 cores, RAM: 12GB, Storage: 512 GB  
+**VM2**: CPU: 5 cores, RAM: 10GB, Storage: 512 GB   
+**VM3**: CPU: 8 cores, RAM: 12GB, Storage: 512 GB   
 
 ## Operating System
 CentOS 7
