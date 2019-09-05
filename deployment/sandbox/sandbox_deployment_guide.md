@@ -74,6 +74,14 @@ WantedBy=multi-user.target
 * Restart  
 `$ sudo systemctl restart freshclam`
 
+### LDAP
+* Download https://mirrors.estointernet.in/apache//directory/apacheds/dist/2.0.0.AM25/apacheds-2.0.0.AM25-64bit.bin
+* Run the file:  
+`$ bash apacheds-2.0.0.AM25-64bit.bin`  (accept all defaults)
+* Enable firewall port 10389.
+
+
+
 
 
 
