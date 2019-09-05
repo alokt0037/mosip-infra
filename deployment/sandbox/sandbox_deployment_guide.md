@@ -80,6 +80,12 @@ WantedBy=multi-user.target
 `$ bash apacheds-2.0.0.AM25-64bit.bin`  (accept all defaults)
 * Enable firewall port 10389.
 
+### Nginx
+* https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7
+
+### ActiveMQ
+* https://www.vultr.com/docs/how-to-install-apache-activemq-on-centos-7
+
 
 
 
