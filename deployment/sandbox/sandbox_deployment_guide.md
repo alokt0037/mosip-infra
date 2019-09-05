@@ -17,6 +17,10 @@ CentOS 7
 All the components of environment to be installed on **VM1**.  
 [Postgresql](#postgresql-db)  
 [HDFS](#single-node-hdfs)
+[ClamAV](#clamav)  
+[LDAP](#ldap)  
+[Nginx](#nginx)  
+[ActiveMQ](#activemq)
 
 ### Postgresql DB
 * Install version 10.10 as per procedure given here: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-postgresql-9-3-on-centos-7.html
