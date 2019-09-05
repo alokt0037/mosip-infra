@@ -14,7 +14,7 @@ Bare Metal or Virutal machines with following minimum configurations:
 CentOS 7
 
 ## Environment setup
-### Postgres DB
+### Postgresql DB
 * Install version 10.10 as per procedure given here: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-postgresql-9-3-on-centos-7.html
 
 * To enable DB access from external machines edit config file `/var/lib/pgsql/10/data/postgresql.conf` and modify as below:  
@@ -25,6 +25,15 @@ unix_socket_directories = '/var/run/postgresql, /tmp'
 max_connections = 1000  
 shared_buffers = 2GB
 ```
+*  Add host entry in `/var/lib/pgsql/10/data/pg_hba.conf`as  
+`host all all 0.0.0.0/0 md5`
+*  Enable port 5432 on the firewall and restart:
+```
+$ firewall-cmd --zone=public --add-port=5432/tcp --permanent
+$ firewall-cmd --reload
+$ sudo systemctl restart postgres-10
+``` 
+
 
 
 
