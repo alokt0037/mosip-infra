@@ -53,7 +53,26 @@ $ hdfs dfs -mkdir /user/idrepo
 $ hdfs dfs -chown -R idrepo:idrepo  /user/idrepo
 ```
 ### ClamAV
+* Install as per procedure give here: https://hostpresto.com/community/tutorials/how-to-install-clamav-on-centos-7/
+* Enable firewall port 3310.
+* Edit the follownig lines in `/usr/lib/systemd/system/freshclam.service`:  
+```
+[Unit]
+Description = freshclam scanner
+After = network.target
 
+[Service]
+Type = forking
+ExecStart = /usr/bin/freshclam -d -c 4
+Restart = on-failure
+PrivateTmp = true
+RestartSec = 20sec
+
+[Install]
+WantedBy=multi-user.target
+```
+* Restart  
+`$ sudo systemctl restart freshclam`
 
 
 
