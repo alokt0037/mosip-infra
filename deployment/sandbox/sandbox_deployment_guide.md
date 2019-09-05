@@ -14,7 +14,9 @@ Bare Metal or Virutal machines with following minimum configurations:
 CentOS 7
 
 ## Environment setup
-To be installed on VM1 (see above).
+All the components of environment to be installed on **VM1**.  
+[Postgresql](#postgresql-db)  
+[HDFS](#single-node-hdfs)
 
 ### Postgresql DB
 * Install version 10.10 as per procedure given here: https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-postgresql-9-3-on-centos-7.html
