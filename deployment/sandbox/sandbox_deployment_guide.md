@@ -16,7 +16,7 @@ CentOS 7
 ## Environment setup
 All the components of environment to be installed on **VM1**.  
 [Postgresql](#postgresql-db)  
-[HDFS](#single-node-hdfs)
+[HDFS](#single-node-hdfs)  
 [ClamAV](#clamav)  
 [LDAP](#ldap)  
 [Nginx](#nginx)  
