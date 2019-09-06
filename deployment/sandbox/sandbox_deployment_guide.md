@@ -38,7 +38,7 @@ shared_buffers = 2GB
 ```
 $ firewall-cmd --zone=public --add-port=5432/tcp --permanent
 $ firewall-cmd --reload
-$ sudo systemctl restart postgres-10
+$ sudo systemctl restart postgresql-10
 ``` 
 ### Single node HDFS
 * Install as per procedure given here: https://www.tecmint.com/install-configure-apache-hadoop-centos-7/
