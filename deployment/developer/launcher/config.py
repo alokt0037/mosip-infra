@@ -34,7 +34,7 @@ POSTGRES_PORT = 5432
 PG_CONF_DIR = '/var/lib/pgsql/10/data'  # Postgres
 
 SFTP_KEY = 'sftpkey' # Should be same as in registration-processor.properties
-CONFIG_SERVER_PORT = 8888 # Should be same as in application.properties of 
+CONFIG_SERVER_PORT = 6616 # Should be same as in application.properties of 
                           # config-server
 COUNTRY_NAME='mycountry'  # For LDAP 
 
